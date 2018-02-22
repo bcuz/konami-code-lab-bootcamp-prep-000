@@ -20,10 +20,7 @@ function init() {
 
   document.body.addEventListener('keydown', function(e) {
 
-    // add to arr
-    // limit arr to 10 items
-    // if arr matches desired arr, success
-    pressed.push(parseInt(e.which))
+    pressed.push(e.which)
     // console.log(e.which)
 
     var last10 = pressed.slice(Math.max(pressed.length - 10, 1))
