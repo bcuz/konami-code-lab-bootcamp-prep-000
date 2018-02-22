@@ -26,7 +26,7 @@ function init() {
     pressed.push(parseInt(e.which))
     // console.log(e.which)
 
-    last10 = pressed.slice(Math.max(pressed.length - 10, 1))
+    var last10 = pressed.slice(Math.max(pressed.length - 10, 1))
 
     if (arraysEqual(last10, code)) {
     	alert("konami")
